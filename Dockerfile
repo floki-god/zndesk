@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL maintainer="bravoheavy@gmail.com"
+LABEL maintainer="og.segoe@gmail.com"
 
 RUN apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common && \
