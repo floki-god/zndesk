@@ -15,7 +15,7 @@ RUN apt-get update && \
 	a2enmod rewrite && \
 	service apache2 restart && \
 	cd /var/www && \
-	wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer -O - -q | php -- --quiet && \
+	wget https://github.com/floki-god/zano-framework.git -O - -q | php -- --quiet && \
 	./composer.phar clear-cache && \
 	./composer.phar create-project uvdesk/community-skeleton uvdesk && \
 	chmod 777 -R /var/www/uvdesk/.env && \
